@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- import libraries -->
+        <link rel="stylesheet" href="font-icons/css/all.css">
+        <script src="font-icons/css/all.min.css"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <!-- end import -->
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="header">
+                <div  class="col-6 col-m-12 col-s-12 col-xs-12">
+                    <div class="col-5 col-m-5 col-s-5 col-xs-12 logo">
+                        <a href="index.html"><img src="pictures/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="col-7 col-m-7 col-s-7 col-xs-12 search">
+                        <div class="wrap">
+                            <input class="input-search" type="search" placeholder="Bạn muốn tìm gì" aria-label="Search">
+                            <button><i class="fa fa-search search-icon btn-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-m-12 col-s-12 col-xs-12 nav-center">
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2">
+                       <div class="black bold login">
+                           <span class="fa fa-user"></span><br>
+                           <label>Đăng nhập</label>
+                       </div>
+                    </div>
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2">
+                        <div class="black bold signup">
+                            <span class="fa fa-user-plus"></span><br>
+                            <label>Đăng kí</label>
+                        </div>
+                    </div>
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2">
+                        <div class="black bold cart">
+                            <span class="fa fa-cart-plus"><i class="amount-cart-item">0</i></span><br>
+                            <label>Giỏ hàng</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-m-6 col-s-6 col-xs-6 contact">
+                        <a class="black" href="#" title="Hotline" rel="nofollow">
+                            <span class="fa fa-phone"><i>Hotline</i></span>
+                            <label><p class="red bold">0963.938.183 (Hà Nội &amp; Hải Phòng)</p>
+                            <p class="red bold">0858.123.125 (Hồ Chí Minh)</p></label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="menu row">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/sale-icon.png">
+                            </span>
+                            <label>Hot Sale</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/hat-icon.png">
+                            </span>
+                            <label>Giáo dục</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/box-icon.png">
+                            </span>
+                            <label>Cũ + Kí gửi</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="page-guitar" href="guitar.html">
+                            <span>
+                                <img src="pictures/icon/guitar-icon.png">
+                            </span>
+                            <label>Guitar</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/piano-icon.png">
+                            </span>
+                            <label>Piano + organ</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/ukulele-icon.png">
+                            </span>
+                            <label>Ukulele</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/drum-set-icon.png">
+                            </span>
+                            <label>Nhạc cụ khác</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/books-icon.png">
+                            </span>
+                            <label>Sách| phụ kiện+</label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="slide">
+                <div class="col-6 col-m-12 col-s-12 slideshow">
+                    <img id="slide-img" src="pictures/slide/tygy-giam-gia-hot-sale-thang-3.jpg">
+                    <i id="but-back" class="fas fa-angle-left" onclick="back()"></i>
+                    <i id="but-next" class="fas fa-angle-right" onclick="next()"></i>
+                </div>
+                <div class="col-6 col-m-12 col-s-12 news">
+                    <div class="navcate">
+                        <h3 class="title">Tin mới nhất</h3>
+                        <b></b>
+                    </div> 
+                    <div class="news-item">
+                        <a href="#"></a>
+                            <div class="news-content">
+                                TYGY Free Ship Guitar Cho Tân Binh Nhập Ngũ 2021
+                                <div class="date">
+                                    <span><i class="fa fa-calendar"></i> 25/02/2021</span>
+                                </div>
+                            </div>
+                            <div class="news-img">
+                                <img src="pictures/slide/tygy-guitar-freeship-mua-xuan-nhap-ngu.jpg">  
+                            </div>
+                        </a>                        
+                    </div>
+                    <div class="news-item">
+                        <a href="#"></a>
+                            <div class="news-content">
+                                Sale Lớn Tết Tân Sửu 2021 | Lì Xì Tiền Mặt và Nhiều Phần Quà Giá Trị
+                                <div class="date">
+                                    <span><i class="fa fa-calendar"></i> 13/01/2021</span>
+                                </div>
+                            </div>
+                            <div class="news-img">
+                                <img src="pictures/slide/sale-lon-giam-gia-guitar-tet-tan-suu-2021.jpg">  
+                            </div>
+                        </a>                        
+                    </div>
+                    <div class="news-item">
+                        <a href="#"></a>
+                            <div class="news-content">
+                                TYGY giảm giá hot sale tháng 3
+                                <div class="date">
+                                    <span><i class="fa fa-calendar"></i> 10/03/2021</span>
+                                </div>
+                            </div>
+                            <div class="news-img">
+                                <img src="pictures/slide/tygy-giam-gia-hot-sale-thang-3.jpg">  
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="row">
+            <div class="navcate">
+                <h3 class="title">Sản phẩm nổi bật</h3>
+                <b></b>
+            </div> 
+            <div class="list-product">
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="productdetail.html"><img src="pictures/product/dan_guitar_acoustic_gt1_gc.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Mantic GT-1GC Vàng Gỗ Tự Nhiên">Đàn Guitar Acoustic Mantic GT-1GC Vàng Gỗ Tự Nhiên</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">1.500.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product ukulele">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="https://tongkhonhaccu.com/dan-guitar-acoustic-mantic-gt-1gc-vang-go-tu-nhien.html"><img class="img" src="pictures/product/dan_ukulele_rosen_k13na_chinh_hang_gia_re.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Ukulele Rosen K13NA (Chính Hãng Full Box 100%)">Đàn Ukulele Rosen K13NA (Chính Hãng Full Box 100%)</a></h4>                            
+                            <div class="price-box">
+                                <p><span class="product-price">1.500.000</span> VND</p> 
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan_guitar_acoustic_gt1bk.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="https://tongkhonhaccu.com/dan-guitar-acoustic-mantic-gt-1gcbk-mau-den.html" title="Đàn Guitar Acoustic Mantic GT-1GCBK Màu Đen">Đàn Guitar Acoustic Mantic GT-1GCBK Màu Đen</a></h4>                            
+                            <div class="price-box">
+                                <p><span class="product-price">1.800.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/combo_dan_guitar_acoustic_rosen_g13br_giam_gia_tet.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="https://tongkhonhaccu.com/combo-dan-guitar-acoustic-rosen-g13-go-thit.html" title="Combo Đàn Guitar Acoustic Rosen G13BR và Khóa Học Guitar Hiển Râu">Combo Đàn Guitar Acoustic Rosen G13BR và Khóa Học Guitar Hiển Râu</a></h4>
+                            <div class="price-box">
+                                <p><span class="product-price">1.800.000</span> VND</p> 
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/e60-baodu.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Everest E60ACM (Sơn Mờ)- Tặng Kèm Bao Dù 6 Lớp">Đàn Guitar Acoustic Everest E60ACM (Sơn Mờ)- Tặng Kèm Bao Dù 6 Lớp</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">4.100.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-acoustic-fenix-om.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Fenix Xanh Ngọc FG150 Dáng OM">Đàn Guitar Acoustic Fenix Xanh Ngọc FG150 Dáng OM</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">1.299.000</span> VND</p>   
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-classic-c40m.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Classic Yamaha C40M">Đàn Guitar Classic Yamaha C40M</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">2.750.000</span> VND</p> 
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-acoustic-poshman-n11ac-khuyen-mai-tet-tan-suu.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Poshman N11AC (New Model 2021)(Mã: N11ACB) (Tình trạng: Còn hàng)">Đàn Guitar Acoustic Poshman N11AC (New Model 2021)(Mã: N11ACB) (Tình trạng: Còn hàng)</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">2.600.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-acoustic-rosen-g11sc-xam.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Rosen Xám Ghi G11SC (Dáng D)">Đàn Guitar Acoustic Rosen Xám Ghi G11SC (Dáng D)</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">2.300.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-acoustic-poshman-s30m-1.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Poshman S30 Mini Full Sapele">Đàn Guitar Acoustic Poshman S30 Mini Full Sapele</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">3.000.000</span> VND</p> 
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/dan-guitar-acoustic-gt1-gcsb.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Đàn Guitar Acoustic Mantic GT-1GCSB Sunburst">Đàn Guitar Acoustic Mantic GT-1GCSB Sunburst</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">1.800.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+                <div class="col-xs-12 col-s-6 col-m-4 col-3 product guitar">
+                    <div class="product-content">
+                        <div class="lb-wrap">
+                            <span class="lb-hot">Hot</span>
+                        </div>
+                        <div class="product-img">
+                            <a href="#"><img src="pictures/product/combo-dan-guitar-acoustic-rosen-g13bl-giam-gia-tet.jpg" alt="guitar"></a>
+                        </div>
+                        <div class="infor">
+                            <h4><a class="content-product-h4" href="#" title="Combo Đàn Guitar Acoustic Rosen G13BL và Khóa Học Guitar Hiển Râu">Combo Đàn Guitar Acoustic Rosen G13BL và Khóa Học Guitar Hiển Râu</a></h4>  
+                            <div class="price-box">
+                                <p><span class="product-price">2.500.000</span> VND</p>  
+                            </div>                  
+                        </div>
+                        <input class="btn-add-to-cart" type="button" value="Thêm vào giỏ hàng">
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>	
+        <div class="page-box">
+            <button class="btn-previous-page"><i class="fas fa-angle-left"></i></button>
+            <input class="amount-page" type="text" value="1">
+            <button class="btn-next-page"><i class="fas fa-angle-right"></i></button>
+        </div> 	        
+        <div id="footer">
+            <div class="row">
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">Chính sách</h3>
+                        <ul>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            
+                            <li><a href="#">Chính sách bảo hành &amp; đổi trả</a></li>
+                            
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>       
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">Dịch vụ & hỗ trợ</h3>
+                        <ul>     
+                            <li><a href="#">An toàn mua bán</a></li>
+                            
+                            <li><a href="#">Đăng ký cộng tác viên</a></li>
+                            
+                            <li><a href="#">Hợp tác giảng dạy</a></li>
+                            
+                            <li><a href="#">Câu hỏi thường gặp</a></li>      
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">TYGY.VN</h3>
+                        <ul class="list-mn">
+        
+                            <li><a href="#">Giới thiệu công ty</a></li>
+                            
+                            <li><a href="#">Tuyển dụng</a></li>
+                            
+                            <li><a href="#">Liên hệ</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 contact">
+                        <p>Mua hàng (9h00 - 22h00)</p>  
+                        <a href="#" title="Điện thoại mua hàng (9h00 - 22h00)" rel="nofollow">Bán lẻ: 0963 938 183 <br>Bán sỉ: 0931 390 555</a>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 contact">
+                        <p>Góp ý, phản ánh (9h00 - 19h00)</p>      
+                        <a href="#" title="Điện thoại Góp ý, phản ánh (9h00 - 19h00)" rel="nofollow">0931 390 555 <br></a>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 social">
+                        <a href="https://www.facebook.com/tongkhonhaccutygy/"><img src="pictures/icon/facebook_icon.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/channel/UCcvKy7jrvBSVPLrSMgXxyqw"><img src="pictures/icon/youtube-icon.jpg" alt="Youtube"></a>
+                        <a href="https://tiki.vn/cua-hang/tygy-mussic"><img src="pictures/icon/tiki_icon.jpg" alt="Tiki"></a>
+                        <a href="https://shopee.vn/tygy254254"><img src="pictures/icon/shopee-icon.jpg" alt="Shopee"></a>
+                    </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,241 @@
+.list-product-order{
+    text-align: center;
+    display: block;
+}
+.cart-content-main{
+    padding: 20px 0px;
+    display: inline-block;
+    width: 100%;
+    min-width: 650px;
+    position: relative;
+}
+.cart-content-main .title{
+    color: red;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.list-product-order .order-code{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 100;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.list-product-order .order-date{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 100;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.nav-order{
+    line-height: 20px;
+    font-size: 16px;
+    height: 50px;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-order input{
+    width: 16px;
+    height: 16px;
+}
+.nav-order .button-delete-all{
+    margin-left: auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(202, 202, 202);
+    cursor: pointer;
+}
+.nav-order .button-delete-all:hover{
+    background-color: rgb(252, 250, 126);
+}
+.button-delete{
+    padding: 3px 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button-delete:hover{
+    color: white;
+    background-color: rgb(255, 51, 0);
+    border: 1px solid rgb(247, 163, 160);
+}
+.choosed{
+    color: white !important;
+    background-color: rgb(255, 51, 0);
+    border: 1px solid rgb(247, 163, 160);
+}
+.list-product-order .list-item{
+    width: 100%;
+    overflow: hidden;
+}
+.cart-item{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px 20px 20px;
+    text-align: left;   
+    background-color: white;
+    display: inline-block;
+}
+.cart-item-img{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.cart-item-img input{
+    width: 16px;
+    height: 16px;
+    margin-right: 10%;
+}
+.cart-item-img img{
+    width: auto;
+    height: auto;
+    max-height: 120px;
+    border: 1px solid rgb(231, 231, 231);
+}
+.cart-item .overview{
+    height: 100%;
+    padding: 5px 20px 0px 10px;
+    color: #636363;
+}
+.overview .content{
+    margin-bottom: 10px;
+}
+.overview .content a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #636363;
+}
+.overview .price{
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+.option button{
+    width: 90%;
+    color: black;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.cart-item .amount{
+    padding: 20px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.cart-item .amount .button-sub{
+    width: 30%;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    margin-left: 5%;
+    border: 1px solid grey;
+    border-right: none;
+}
+.cart-item .amount .amount-value{
+    width: 30%;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+}
+.cart-item .amount .button-plus{
+    width: 30%;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    margin-right: 5%;
+    border: 1px solid grey;
+    border-left: none;
+}
+.button-plus:hover,.button-sub:hover{
+    cursor: pointer;
+    background-color: rgb(248, 241, 203);
+}
+.customer-infor .customer-infor-header{
+    width: 100%;
+    padding: 10px 0px 10px;
+    text-align: center;
+}
+
+.customer-infor .form-infor{
+    width: 100%;
+    height: 34px;
+    margin-bottom: 10px;
+}
+.customer-infor .form-infor input,select,textarea{
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline-block;
+}
+textarea{
+    min-height: 100px;
+}
+.customer-infor .form-pay{
+    width: 100%;
+    padding: 10px 0px 10px;
+    text-align: center;
+}
+.customer-infor .title{
+    text-align: left;
+}
+.customer-infor .style-pay{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.paybill{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    padding: 5px 10px 5px;
+    align-items: center;
+}
+.paybill input{
+    width: 200px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ee4d2d;
+    color: honeydew;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 0px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.total-price{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+}

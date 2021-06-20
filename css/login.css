@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    background-color:  rgb(228, 227, 227);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.login-title{
+    display: block;
+    padding: 20px 20px 30px;
+    text-align: center;
+}
+.login-title-span{
+    font-size: 24px;
+    color: rgb(253, 74, 74);
+    font-weight: 600
+}
+.login-form{
+    padding: 0px 20px 0px 20px;
+}
+.form-item{
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-input{
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 1px solid rgb(201, 201, 201);
+}
+.form-item i{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: rgb(177, 177, 177);
+}
+.wrap-btn-login{
+    display: block;
+}
+.btn-login{
+    padding: 10px 0px;
+    width: calc(100% - 1px);
+    font-size: 20px;
+    border: none;
+    background-color: rgb(252, 98, 98);
+    color: white;
+}
+.btn-login:hover{
+    cursor: pointer;
+}
+.wrap-forgot-password{
+    padding: 10px 20px 20px;
+    text-align: right;
+}
+.login-footer{
+    padding: 0px 20px 20px;
+    text-align: center;
+}
+.signup-title{
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+}
+.btn-signup{
+    font-size: 16px;
+    color: rgb(250, 77, 77);
+}
+.btn-visible-password:hover{
+    cursor: pointer;
+    color: rgb(145, 145, 145);
+}

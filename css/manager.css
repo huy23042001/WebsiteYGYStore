@@ -1,0 +1,106 @@
+.manager-title{
+    display: flex;
+}
+.manager-title h3{
+    font-size: 22px;
+    color: rgb(104, 104, 104);
+}
+.btn-add-new-product{
+    border: 1px solid rgb(178, 179, 178);
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(3, 172, 3);
+    color: #fff;
+    margin-left: auto;
+}
+.btn-add-new-product a{
+    color: #fff;
+    font-size: 16px;
+}
+.manager-box-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.manager-box-nav .nav-left span{
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+}
+.manager-box-nav .nav-left input{
+    background: #f1f1f1;
+    border: 1px solid rgb(178, 179, 178);
+    padding: 3px;
+    font-size: 16px;
+    width: 40px;
+    border-radius: 5px;
+}
+.manager-box-nav .nav-right input{
+    background: #f1f1f1;
+    border: 1px solid rgb(178, 179, 178);
+    padding: 3px;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.manager-table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.manager-table-row th,td{
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(104, 104, 104);
+    text-align: left;
+}
+.manager-table-row td img{
+    height: 60px;
+}
+.manager-box-page{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.manager-box-page-form{
+    display: flex;
+    position: absolute;
+    left: calc(100% - 120px);
+}
+.manager-box-page-form input{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+.manager-box-page-form .amount{
+    background-color: rgb(221, 221, 221);
+    border-left: none;
+    border-right: none;
+}
+.manager-box-page-form .btn-previous{
+    border-right: none;
+}
+.manager-box-page-form .btn-next{
+    border-left: none;
+}
+.fa-star{
+    color: red;
+    font-size: 12px;
+}
+.btn-search{
+    font-size: 16px;
+    padding: 5px 8px;
+    font-weight: bold;
+    color: rgb(116, 116, 116);
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+.btn-search:hover{
+    background-color: rgb(216, 216, 216);
+}

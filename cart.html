@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <!-- import libraries -->
+        <link rel="stylesheet" href="font-icons/css/all.css">
+        <script src="font-icons/css/all.min.css"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <!-- end import -->
+    </head>
+    <body>
+        <div class="row">
+            <div class="header">
+                <div class="col-6 col-m-12 col-s-12 col-xs-12">
+                    <div class="col-5 col-m-5 col-s-5 col-xs-12 logo">
+                        <a href="index.html"><img src="pictures/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="col-7 col-m-7 col-s-7 col-xs-12 search">
+                        <div class="wrap">
+                            <input type="search" placeholder="Bạn muốn tìm gì" aria-label="Search">
+                            <button><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-m-12 col-s-12 col-xs-12">
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2">
+                        <div class="black bold user">
+                            <span class="fa fa-user"><i class="fas fa-angle-down nav-user-drop"></i></span><br>
+                            <label>huytai</label>
+                            <ul>
+                                <li class="btn-logout">Đăng xuất</li>
+                            </ul>
+                        </div>
+                     </div>
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2">
+                        <div class="black bold notification">
+                            <span class="fa fa-bell"></span><br>
+                            <label>Thông báo</label>
+                        </div>
+                    </div>
+                    <div class="col-2 col-m-2 col-s-2 col-xs-2 cart">
+                        <a class="black bold" href="#">
+                            <span class="fa fa-cart-plus"><i class="amount-cart-item">0</i></span><br>
+                            <label>Giỏ hàng</label>
+                        </a>
+                    </div>
+                    <div class="col-6 col-m-6 col-s-6 col-xs-6 contact">
+                        <a class="black" href="#" title="Hotline" rel="nofollow">
+                            <span class="fa fa-phone"><i>Hotline</i></span>
+                            <label><p class="red bold">0963.938.183 (Hà Nội &amp; Hải Phòng)</p>
+                            <p class="red bold">0858.123.125 (Hồ Chí Minh)</p></label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="menu row">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/sale-icon.png">
+                            </span>
+                            <label>Hot Sale</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/hat-icon.png">
+                            </span>
+                            <label>Giáo dục</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/box-icon.png">
+                            </span>
+                            <label>Cũ + Kí gửi</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="guitar.html">
+                            <span>
+                                <img src="pictures/icon/guitar-icon.png">
+                            </span>
+                            <label>Guitar</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/piano-icon.png">
+                            </span>
+                            <label>Piano + organ</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/ukulele-icon.png">
+                            </span>
+                            <label>Ukulele</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/drum-set-icon.png">
+                            </span>
+                            <label>Nhạc cụ khác</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="pictures/icon/books-icon.png">
+                            </span>
+                            <label>Sách| phụ kiện+</label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" style="background-color: rgb(230, 230, 230);">
+            <div class="row">
+                <div class="cart-content-main">
+                    <div class="col-8 col-m-12 col-s-12 col-xs-12">
+                        <div class="list-product-order">
+                            <div class="header-order">
+                                <p class="title">Đơn đặt hàng</p>
+                                <p class="order-code">Mã đơn hàng: DH280320210011363</p>
+                                <p class="order-date">28 Tháng Ba 2021 4:06 CH</p>
+                            </div>
+                            <div class="nav-order">
+                                <input class="checkbox-choose-all" type="checkbox" id="all-order">
+                                <label for="all-product">Tất cả</label>
+                                <button class="button-delete-all">Xóa</button>
+                            </div>
+                            <div class="list-item">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-m-12 col-s-12 col-xs-12">
+                        <div class="customer-infor">
+                            <div class="customer-infor-header">
+                                <p class="title">Thông tin người mua hàng</p>
+                            </div>
+                            <div class="form-infor">
+                                <input type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="form-infor">
+                                <input type="text" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-infor drop-select">
+                                <select name="CityID">
+                                    <option value="0" selected="selected">- chọn tỉnh / thành -</option>
+                                    <option value="69">TP. Hà Nội</option>
+                                    <option value="70">TP. Hồ Chí Minh</option>
+                                    <option value="72">TP. Hải Phòng</option>
+                                    <option value="71">TP. Đà Nẵng</option>
+                                    <option value="73">TP. Cần Thơ</option>
+                                    <option value="74">An Giang</option>
+                                    <option value="75">Bà Rịa - Vũng Tàu</option>
+                                    <option value="78">Bạc Liêu</option>
+                                    <option value="76">Bắc Giang</option>
+                                    <option value="77">Bắc Kạn</option>
+                                    <option value="79">Bắc Ninh</option>
+                                    <option value="89">Hưng Yên</option>
+                                </select> 
+                            </div>
+                            <div class="form-infor drop-select">
+                                <select name="DistrictID">
+                                    <option value="0" selected="selected">- chọn quận / huyện -</option>
+                                    <option value="1">Huyện Khoái Châu</option>
+                                    <option value="2">Huyện Mĩ Hào</option>
+                                    <option value="3">Huyện Yên Mĩ</option>
+                                    <option value="4">Huyện Phù Cừ</option>
+                                    <option value="5">Huyện Tiên Lữ</option>
+                                </select>
+                            </div>
+                            <div class="form-infor">
+                                <input type="text" placeholder="Địa chỉ email">
+                            </div>
+                            <div class="form-infor">
+                                <input type="text" placeholder="Địa chỉ nhận hàng">
+                            </div>
+                            <div>
+                                <textarea name="Content" placeholder="Ghi chú mua hàng"></textarea>
+                            </div>
+                            <div class="form-pay">
+                                <p class="title">Hình thức thanh toán</p>
+                                <div class="style-pay">
+                                    <input type="radio" id="1" name="pay">
+                                    <label for="1">Thanh toán khi nhận hàng - COD</label>
+                                </div>
+                                <div class="style-pay">
+                                    <input type="radio" id="2" name="pay">
+                                    <label for="2">Thanh toán qua chuyển khoản</label>
+                                </div>
+                
+                            </div>
+                            <p style="color: red;font-size: 20px;">Thành tiền: <span class="total-price">0</span> VND</p>
+                        </div>                   
+                    </div>
+                    <div class="paybill">
+                        <input type="button" value="Thanh toán">
+                    </div>
+                </div>
+            </div>     
+        </div>	 
+        <div style="clear: both"></div>	       
+        <div id="footer">
+            <div class="row">
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">Chính sách</h3>
+                        <ul>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            
+                            <li><a href="#">Chính sách bảo hành &amp; đổi trả</a></li>
+                            
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>       
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">Dịch vụ & hỗ trợ</h3>
+                        <ul>     
+                            <li><a href="#">An toàn mua bán</a></li>
+                            
+                            <li><a href="#">Đăng ký cộng tác viên</a></li>
+                            
+                            <li><a href="#">Hợp tác giảng dạy</a></li>
+                            
+                            <li><a href="#">Câu hỏi thường gặp</a></li>      
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 footer-col">
+                        <h3 class="heading">TYGY.VN</h3>
+                        <ul class="list-mn">
+        
+                            <li><a href="#">Giới thiệu công ty</a></li>
+                            
+                            <li><a href="#">Tuyển dụng</a></li>
+                            
+                            <li><a href="#">Liên hệ</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 contact">
+                        <p>Mua hàng (9h00 - 22h00)</p>  
+                        <a href="#" title="Điện thoại mua hàng (9h00 - 22h00)" rel="nofollow">Bán lẻ: 0963 938 183 <br>Bán sỉ: 0931 390 555</a>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 contact">
+                        <p>Góp ý, phản ánh (9h00 - 19h00)</p>      
+                        <a href="#" title="Điện thoại Góp ý, phản ánh (9h00 - 19h00)" rel="nofollow">0931 390 555 <br></a>
+                    </div>
+                    <div class="col-2 col-m-4 col-s-6 col-xs-12 social">
+                        <a href="https://www.facebook.com/tongkhonhaccutygy/"><img src="pictures/icon/facebook_icon.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/channel/UCcvKy7jrvBSVPLrSMgXxyqw"><img src="pictures/icon/youtube-icon.jpg" alt="Youtube"></a>
+                        <a href="https://tiki.vn/cua-hang/tygy-mussic"><img src="pictures/icon/tiki_icon.jpg" alt="Tiki"></a>
+                        <a href="https://shopee.vn/tygy254254"><img src="pictures/icon/shopee-icon.jpg" alt="Shopee"></a>
+                    </div>
+            </div>
+        </div>
+        <script src="js/cart.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

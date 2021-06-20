@@ -1,0 +1,18 @@
+.navbar-guitar{
+    display: flex;
+    border-bottom: 2px solid gray;
+    padding: 10px 0px;
+}
+.navbar-guitar .nav-left span{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar-guitar .nav-center{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.navbar-guitar select{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý sản phẩm</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" type="image/png" href="../assets/title-logo.jpg"/>
+
+	<!-- Import lib -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+	<link rel="stylesheet" type="text/css" href="font-icons/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/decoupled-document/ckeditor.js"></script>
+	<!-- End import lib -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/manager.css">
+</head>
+<body class="overlay-scrollbar">
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fas fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<img src="pictures/logo.png" alt="ATPro logo" class="logo logo-light">
+				<img src="pictures/logo.png" alt="ATPro logo" class="logo logo-dark">
+			</li>
+		</ul>
+		<!-- end nav left -->
+		<!-- form -->
+		<!-- <form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="What you looking for...">
+			<i class="fas fa-search"></i>
+		</form> -->
+		<!-- end form -->
+		<!-- nav right -->
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fas fa-moon dark-icon"></i>
+					<i class="fas fa-sun light-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link">
+					<i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+					<span class="navbar-badge">4</span>
+				</a>
+				<ul id="notification-menu" class="dropdown-menu notification-menu">
+					<div class="dropdown-menu-header">
+						<span>
+							Thông báo
+						</span>
+					</div>
+					<div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Trần Anh Tuất đã nhân được đơn hàng 1100017
+									<br>
+									<span>
+										21/05/2021
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Bùi Thị Hồng đã đặt đơn hàng 1100016
+									<br>
+									<span>
+										21/05/2021
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Phan Thanh Huỳnh đã đặt đơn hàng 1100015
+									<br>
+									<span>
+										21/05/2021
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lê Anh Tuấn đã hủy đơn hàng 1100014
+									<br>
+									<span>
+										21/05/2021
+									</span>
+								</span>
+							</a>
+						</li>
+					</div>
+					<div class="dropdown-menu-footer">
+						<span>
+							View all notifications
+						</span>
+					</div>
+				</ul>
+			</li>
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+					<img src="pictures/avatar.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<span>Thông tin cá nhân</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-cog"></i>
+								</div>
+								<span>Cài đặt</span>
+							</a>
+						</li>
+						<li  class="dropdown-menu-item">
+							<a href="login.html" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-sign-out-alt"></i>
+								</div>
+								<span>Đăng xuất</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="admin.html" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<span>
+						Trang chủ
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link active">
+					<div>
+						<i class="fab fa-accusoft"></i>
+					</div>
+					<span>Quản lý Logo</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="../LogoManager/logomanager.html" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-tasks"></i>
+					</div>
+					<span>Quản lý đơn hàng</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="productmanager.html" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-spinner"></i>
+					</div>
+					<span>Quản lý sản phẩm</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<span>Quản lý bài viết</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<!-- main content -->
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-sm-12 col-m-12 col-8 col-xl-8">
+				<div class="card">
+					<div class="card-header manager-title">
+						<h3>Quản lý sản phẩm</h3>
+						<button class="btn-add-new-product"><a href="addproduct.html">Thêm mới</a></button>
+					</div>
+					<div class="card-content">
+						<div class="manager-box-content">	
+							<div class="manager-box-nav">
+								<div class="nav-left">
+									<span>Hiển thị</span>
+									<input type="text" value="6">
+									<span>dòng</span>
+								</div>
+								<div class="nav-right">
+									<input class="manager-nav-input-search" type="search" placeholder="Tìm kiếm">
+									<button class="fas fa-search btn-search"></button>
+								</div>
+							</div>  
+							<table class="manager-table">
+								<tr class="manager-table-row">
+									<th>Chọn</th>
+									<th>ID</th>
+									<th>Tên Sản Phẩm</th>
+									<th>Ảnh</th>
+									<th>Giá cũ</th>
+									<th>Giá mới</th>
+									<th>Tiện ích</th>
+								</tr>
+								<tr class="manager-table-row">
+									<th class="input-select">
+										<input type="checkbox">
+									</th>
+									<td class="id">101816</td>
+									<td class="title">Đàn guitar Acoustic GT1-GC</td>
+									<td class="img"><img src="pictures/product/dan_guitar_acoustic_gt1_gc.jpg" alt="product"></td>
+									<td class="old-price">2.500.000</td>
+									<td class="new-price">2.200.000</td>
+									<td class="options">
+										<button class="btn-edit"><a href="editproduct.html"><i class="fas fa-edit"></i></a></button>
+										<button class="btn-delete"><i class="fas fa-trash"></i></button>
+									</td>
+								</tr>
+								<tr class="manager-table-row">
+									<th class="input-select">
+										<input type="checkbox">
+									</th>
+									<td class="id">101815</td>
+									<td class="title">Đàn guitar Acoustic GT1-BK</td>
+									<td class="img"><img src="pictures/product/dan_guitar_acoustic_gt1bk.jpg" alt="product"></td>
+									<td class="old-price">2.800.000</td>
+									<td class="new-price">2.500.000</td>
+									<td class="options">
+										<button class="btn-edit"><i class="fas fa-edit"></i></button>
+										<button class="btn-delete"><i class="fas fa-trash"></i></button>
+									</td>
+								</tr>
+								<tr class="manager-table-row">
+									<th class="input-select">
+										<input type="checkbox">
+									</th>
+									<td class="id">101814</td>
+									<td class="title">Đàn Ukulele Rosen K13-NA chính hãng giá rẻ</td>
+									<td class="img"><img src="pictures/product/dan_ukulele_rosen_k13na_chinh_hang_gia_re.jpg" alt="logo"></td>
+									<td class="old-price">2.000.000</td>
+									<td class="new-price">1.500.000</td>
+									<td class="options">
+										<button class="btn-edit"><i class="fas fa-edit"></i></button>
+										<button class="btn-delete"><i class="fas fa-trash"></i></button>
+									</td>
+								</tr>
+								<tr class="manager-table-row">
+									<th class="input-select">
+										<input type="checkbox">
+									</th>
+									<td class="id">101813</td>
+									<td class="title">Combo đàn guitar Acoustic Rosen G13-BR giảm giá tết</td>
+									<td class="img"><img src="pictures/product/combo_dan_guitar_acoustic_rosen_g13br_giam_gia_tet.jpg" alt="logo"></td>
+									<td class="old-price">2.500.000</td>
+									<td class="new-price">1.800.000</td>
+									<td class="options">
+										<button class="btn-edit"><i class="fas fa-edit"></i></button>
+										<button class="btn-delete"><i class="fas fa-trash"></i></button>
+									</td>
+								</tr>
+							</table>
+							<div class="manager-box-page">
+								<form class="manager-box-page-form">
+									<input type="text" class="btn-previous" name="Edit" value='<'>
+									<input type="text" class="amount" value="1">
+									<input type="text" class="btn-next" name="Delete" value='>'>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-m-12 col-4 col-xl-4">
+				<div class="card">
+					<div class="card-header">
+						<h3>Top sản phẩm bán chạy</h3>
+					</div>
+					<div class="card-content">
+						<div class="manager-box-nav">
+							<form class="nav-right ">
+								<span>Top</span>
+								<input style="width: 30px;text-align: center;margin-right: 5px;" type="text" name="top" value="3">
+								<span>Tháng</span>
+								<input style="width: 30px;text-align: center;margin-right: 5px;" type="text" name="month" value="2">
+								<span>Năm</span>
+								<input style="width: 60px;text-align: center;" type="text" name="year" value="2021">
+							</form>
+						</div>
+						<table>
+							<tr>
+								<th>ID</th>
+								<th>Số lượng</th>
+								<th>Doanh thu</th>
+								<th>Đánh giá</th>
+							</tr>
+							<tr>
+								<td>#101813</td>
+								<td>34</td>
+								<td>61.200.000</td>
+								<td>4.5 <i class="fas fa-star"></i></td>
+							</tr>
+							<tr>
+								<td>#101814</td>
+								<td>28</td>
+								<td>42.000.000</td>
+								<td>4.3 <i class="fas fa-star"></i></td>
+							</tr>
+							<tr>
+								<td>#101815</td>
+								<td>20</td>
+								<td>50.000.000</td>
+								<td>4.5 <i class="fas fa-star"></i></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end main content -->
+	<!-- import script -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/manage.js"></script>
+	<!-- end import script -->
+</body>
+</html>
