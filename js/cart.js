@@ -4,8 +4,15 @@ function update_total_price(){
     for(let i = 0;i<cart_item.length;i++){
         if ($(cart_item[i]).find('.checkbox-choosed')[0].checked){
             total_price+=parseInt(Convert_TO_Digit($(cart_item[i]).find('.price').text()))*parseInt($(cart_item[i]).find('.amount-value')[0].value)
-            if ($(cart_item[i]).find('.option .choosed')[0].classList.contains('option2'))
-                total_price-=300000
+            var bonus = $(cart_item[i]).find('.choosed span').text()
+            if (bonus != undefined){
+                console.log(bonus[0])
+                bonus=bonus.trim().replace('VND','')
+                if (bonus[0] == '+')
+                    total_price+=parseInt(Convert_TO_Digit(bonus))
+                if (bonus[0] == '-')
+                    total_price-=parseInt(Convert_TO_Digit(bonus))
+            }
         }            
     }
     $('.total-price').text(Convert_To_Price_String(total_price.toString()))
@@ -105,10 +112,12 @@ function Create_cart_item(img,content,price,amount){
         <button class="button-delete">Xóa</button>
     </div>
     <div class="col-2 col-m-2 col-s-2 col-xs-2 option">
-        <button class="btn-choose-option option1 choosed">Đầy đủ phụ kiện</button>
+        <button class="btn-choose-option option1 choosed">
+            Đầy đủ phụ kiện
+            <span>+300.000 VND</span>
+        </button>
         <button class="btn-choose-option option2">
             Không phụ kiện
-            <span>-300.000 VND</span>
         </button>
     </div>
     <div class="col-2 col-m-2 col-s-2 col-xs-2 amount">
