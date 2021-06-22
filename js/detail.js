@@ -53,4 +53,18 @@ $(document).ready(function(){
             alert('Phải đăng nhập mới thực hiện được thao tác này')
         }
     })
+    // $('.btn-pay-now').click(function(){
+    //     var product = $(this).parent().parent().parent()
+    //         var img = product.find('.big-img img').attr('src')
+    //         var price = product.find('.product-price').text().replace('Giá bán:',''.replace('VND','.')).trim()
+    //         var content = product.find('.product-name').text()
+    //         var amount = product.find('.amount')[0].value
+    //         var order = {
+    //             'img': img,
+    //             'name': content, 
+    //             'price': price,
+    //             'amount': amount
+    //         };
+    //         sessionStorage.setItem('order-pay-now',JSON.stringify(order))
+    // })
 })

@@ -1,12 +1,3 @@
-$('.checkbox-choosed').change(function(){
-    update_total_price()
-})
-$('.checkbox-choose-all').change(function(){
-    if(this.checked){
-        $('.checkbox-choosed').prop('checked',true)
-        update_total_price()
-    }
-})
 function update_total_price(){
     var total_price = 0;
     var cart_item = $('.cart-item')
@@ -80,6 +71,15 @@ $(document).ready(function(){
         if ($(this).parent().parent().find('.checkbox-choosed')[0].checked)
             update_total_price()
     })
+    $('.checkbox-choosed').change(function(){
+        update_total_price()
+    })
+    $('.checkbox-choose-all').change(function(){
+        if(this.checked){
+            $('.checkbox-choosed').prop('checked',true)
+            update_total_price()
+        }
+    })
 })
 
 function isNumberKey(evt){
@@ -105,8 +105,8 @@ function Create_cart_item(img,content,price,amount){
         <button class="button-delete">Xóa</button>
     </div>
     <div class="col-2 col-m-2 col-s-2 col-xs-2 option">
-        <button class="btn-choose-option option1">Đầy đủ phụ kiện</button>
-        <button class="btn-choose-option option2 choosed">
+        <button class="btn-choose-option option1 choosed">Đầy đủ phụ kiện</button>
+        <button class="btn-choose-option option2">
             Không phụ kiện
             <span>-300.000 VND</span>
         </button>

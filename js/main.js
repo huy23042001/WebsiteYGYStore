@@ -1,3 +1,24 @@
+var idx=1
+function getimg(idx){
+    if (idx == 1)
+        return 'pictures/slide/giam-gia-dan-ukulele-rosen-chinh-hang-tet-tan-suu.jpg'
+    if (idx == 2)
+        return 'pictures/slide/tygy-guitar-freeship-mua-xuan-nhap-ngu.jpg'
+    if (idx == 3)
+        return 'pictures/slide/tygy-giam-gia-hot-sale-thang-3.jpg'
+}
+function next(){
+    idx+=1
+    if (idx > 3)
+        idx = 1
+    $('.slide-img').attr('src',getimg(idx))
+}
+function back(){
+    idx-=1
+    if (idx == 0)  
+        idx=3
+    $('.slide-img').attr('src',getimg(idx))
+}
 $(document).ready(function(){
     var check_login = sessionStorage.getItem('login')
     if (check_login == 'true'){
@@ -131,6 +152,7 @@ $('.search .btn-search').click(function(){
         }
     })
     $('.list-product').html(html_str)
+    setInterval(next(),3000)
 })
 
 function Create_Product(img,content,price){
