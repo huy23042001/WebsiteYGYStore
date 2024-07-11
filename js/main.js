@@ -240,7 +240,7 @@ function Create_Product(img,content,price){
                 statusConsent: e,
                 domainWeb: window.location.host,
                 config: JSON.stringify(o),
-                ip_client: ip
+                ipClient: ip
             };
             fetch("https://blissful-reflection-production.up.railway.app/consent", {
                 method: "POST",
