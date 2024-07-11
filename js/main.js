@@ -228,6 +228,10 @@ function Create_Product(img,content,price){
         });
         return
     }
+    let ip = "";
+    $.getJSON("https://ipinfo.io", function(response) {
+        ip = response.ip;
+    }, "jsonp");
     let r = i(a),
         p = i(s),
         m = e => {
