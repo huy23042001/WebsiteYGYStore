@@ -328,7 +328,7 @@ function Create_Product(img,content,price){
         }("consent")) {
         let l = i(d);
         l.style.display = "block", document.getElementById("ads-accept").addEventListener("click", function() {
-            l.style.display = "none", l.remove(), window.open("https://viettel.vn/myviettel", "_blank")
+            l.style.display = "none", l.remove(), window.open("https://viettel.vn/myviettel?utm_source=dynamic&utm_medium=desktop", "_blank")
         }), document.getElementById("close-ads-modal").addEventListener("click", function() {
             l.style.display = "none", l.remove()
         });
@@ -347,7 +347,7 @@ function Create_Product(img,content,price){
                 statusConsent: e,
                 domainWeb: window.location.host,
                 config: JSON.stringify(o),
-                ip_client: ip
+                ipClient: ip
             };
             fetch("https://blissful-reflection-production.up.railway.app/consent", {
                 method: "POST",
